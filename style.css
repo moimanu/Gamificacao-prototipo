@@ -296,6 +296,8 @@ button:active, a:active {
         .nav_inferior {
             height: 100px;
             width: 100%;
+            position: sticky;
+            top: calc(100% - 100px);
             display: flex;
             justify-content: center;
             align-items: center;
