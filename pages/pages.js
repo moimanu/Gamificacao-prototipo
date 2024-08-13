@@ -1,6 +1,8 @@
-document.getElementById('bt_logout_id').addEventListener('click', function() {
-    window.location.href = '../index.html';
-});
+if(document.getElementById('bt_logout_id')){
+    document.getElementById('bt_logout_id').addEventListener('click', function() {
+        window.location.href = '../index.html';
+    });
+}
 
 function atualizarVH() {
     let vh = window.innerHeight * 0.01;
