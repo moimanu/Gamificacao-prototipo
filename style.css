@@ -27,6 +27,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     backdrop-filter: blur(6px);
+    overflow: hidden;
 }
 
 .body_tela_login {
@@ -83,6 +84,10 @@ button:active, a:active {
 }
 
 /*FORM LOGIN*/
+
+    .main_login {
+        overflow: hidden;
+    }
 
     .form_login {
         display: flex;
