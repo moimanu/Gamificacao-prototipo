@@ -296,12 +296,9 @@ button:active, a:active {
         .nav_inferior {
             height: 100px;
             width: 100%;
-            position: sticky;
-            bottom: 0px;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-image: linear-gradient(to top, #131b2b, #131b2b00);
         }
 
         .bt_nav_inferior {
@@ -312,6 +309,10 @@ button:active, a:active {
             color: white;
             font-weight: bold;
             margin: 0px 10px;
+        }
+
+        .nav_inferior_ranking {
+            background-color: #353459;
         }
 
     /**/
