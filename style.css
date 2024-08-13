@@ -27,7 +27,6 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     backdrop-filter: blur(6px);
-    overflow: hidden;
 }
 
 .body_tela_login {
@@ -299,6 +298,8 @@ button:active, a:active {
             display: flex;
             justify-content: center;
             align-items: center;
+            position: fixed;
+            bottom: 0px;
         }
 
         .bt_nav_inferior {
