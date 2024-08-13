@@ -1,0 +1,338 @@
+:root {
+    --amarelo-principal: #FBBB40;
+    --azul-marinho: #1F2B44;
+    --azul-marinho-secundario: #131b2b;
+    --fonte-principal: Montserrat;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+}
+
+::selection {
+    background-color: var(--amarelo-principal);
+    color: var(--azul-marinho);
+}
+
+body {
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100vw;
+    background-color: #353459;
+    background-image: url(img/background.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    backdrop-filter: blur(6px);
+}
+
+.body_tela_login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: calc(100% - 170px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+main::-webkit-scrollbar {
+    width: 0px;
+}
+
+.logo {
+    height: 180px;
+    width: 180px;
+    margin: 10px;
+}
+
+button, a {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+button img, a img {
+    width: 18px;
+    margin-right: 10px;
+}
+
+button p, a p {
+    font-size: 18px;
+}
+
+button:hover, a:hover {
+    cursor: pointer;
+    filter: brightness(0.9);
+}
+
+button:active, a:active {
+    transform: scale(0.95);
+}
+
+/*FORM LOGIN*/
+
+    .form_login {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .input_text_padrao {
+        margin: 12px 0px;
+        padding: 14px 18px;
+        width: 100%;
+        border-radius: 10px;
+        border: none;
+        font-size: 15px;
+    }
+
+    .button_login {
+        background-color: var(--amarelo-principal);
+        color: var(--azul-marinho);
+        border-radius: 20px;
+        font-weight: bold;
+        padding: 14px 18px;
+        margin: 10px 0px;
+        width: 100%;
+    }
+
+/**/
+
+/*PAGE RANKING*/
+
+    /*CABECALHO*/
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 20px;
+        }
+
+        header * {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .titulo_header {
+            color: white;
+            font-size: 24px;
+        }
+
+        .nav_header button {
+            margin-left: 15px;
+        }
+
+        .bt_icone {
+            width: fit-content;
+            background-color: transparent;
+        }
+
+        .bt_logout {
+            background-color: transparent;
+            font-weight: bold;
+            color: white;
+        }
+
+    /**/
+
+    /**/
+
+        .status_atualizacao {
+            margin-bottom: 20px;
+            color: white;
+        }
+    
+    /**/
+
+    /*PÓDIO*/
+
+        .podio { 
+            width: 100%;
+        }
+
+        .box_podio{
+            display: flex;
+            width: 100%;
+            margin: 20px 0px;
+        }
+
+        .posicao {
+            width: 60px;
+            height: 60px;
+            background-color: var(--azul-marinho-secundario);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .membro {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: var(--azul-marinho-secundario);
+            margin-left: 20px;
+            width: calc(100% - 80px);
+            border-radius: 15px;
+            color: white;
+        }
+
+        .membro div {
+            display: flex;
+        }
+
+        .foto_membro {
+            background-color: white;
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .descricao_membro {
+            width: calc(100% - 60px);
+            height: 100%;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .descricao_membro p {
+            overflow: hidden;
+            text-wrap: nowrap;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .pontuacao {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            color: var(--azul-marinho-secundario);
+            border-radius: 0 15px 15px 0;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        /*PRIMEIRO PODIO*/
+        
+            #primeiro_podio .posicao {
+                background-color: #FBBB40;
+                color: var(--azul-marinho);
+            }
+
+            #primeiro_podio .membro {
+                background-color: #FBBB40;
+                color: var(--azul-marinho);
+            }
+
+        /**/
+    /**/
+
+    /*DEMAIS POSICOES*/
+
+        .demais_posicoes {
+            width: 100%;
+            margin: 20px;
+        }
+
+        .demais_posicoes ul {
+            list-style: none;
+            width: 100%;
+        }
+
+        .demais_posicoes ul li {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            font-weight: bold;
+            color: white;
+            margin: 30px 0px;
+        }
+
+        .demais_posicoes ul li p {
+            text-wrap: nowrap;
+        }
+
+        .linha {
+            width: -webkit-fill-available;
+            height: 1px;
+            background-color: rgb(228, 228, 228);
+            margin: auto 20px;   
+        }
+        
+    /**/
+
+    /*NAV INFERIOR*/
+
+        .nav_inferior {
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bt_nav_inferior {
+            background-color: transparent;
+            padding: 12px 15px;
+            border-radius: 50px;
+            border: solid white 2px;
+            color: white;
+            font-weight: bold;
+            margin: 0px 10px;
+        }
+
+    /**/
+
+/**/
+
+
+@media screen and (min-width: 1024px) {
+    main {
+        width: 50%;
+        margin: auto;
+    }
+
+    .form_login {
+        width: 350px;
+    }
+}
+
+/*TELA DE REGRAS*/
+
+    .body_tela_secundaria {
+        background-image: none;
+        background-color: var(--azul-marinho-secundario);
+    }
+
+    .bt_voltar {
+        background-color: transparent;
+        font-weight: bold;
+        color: white;
+    }
+
+/**/
