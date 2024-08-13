@@ -297,7 +297,7 @@ button:active, a:active {
             height: 100px;
             width: 100%;
             position: sticky;
-            top: calc(100% - 100px);
+            bottom: 0px;
             display: flex;
             justify-content: center;
             align-items: center;
