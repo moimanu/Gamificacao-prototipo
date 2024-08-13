@@ -301,6 +301,7 @@ button:active, a:active {
             display: flex;
             justify-content: center;
             align-items: center;
+            background-image: linear-gradient(to top, #131b2b, #131b2b00);
         }
 
         .bt_nav_inferior {
