@@ -84,6 +84,11 @@ button:active, a:active {
     transform: scale(0.95);
 }
 
+a, button, label {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
 *::-webkit-scrollbar {
     width: 0px;
     margin-left: 5px;
