@@ -49,10 +49,6 @@ main {
     overflow-x: hidden;
 }
 
-main::-webkit-scrollbar {
-    width: 0px;
-}
-
 .logo {
     height: 180px;
     width: 180px;
@@ -87,7 +83,6 @@ button:active, a:active {
 a, button, label {
     -webkit-tap-highlight-color: transparent;
 }
-
 
 *::-webkit-scrollbar {
     width: 0px;
@@ -157,7 +152,7 @@ a, button, label {
             font-size: 24px;
         }
 
-        .nav_header button {
+        .nav_header button, .nav_header a {
             margin-left: 15px;
         }
 
@@ -379,10 +374,11 @@ a, button, label {
 
     .lista_regras li {
         margin: 20px 0;
-        border: solid 1px var(--cinza);
         padding: 20px;
         border-radius: 15px;
         width: 100%;
+        background-color: var(--azul-marinho);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     }
 
     .lista_regras li p {
@@ -451,5 +447,35 @@ a, button, label {
         }
 
     /**/
+
+/**/
+
+/*TELA HISTÓRICO*/
+
+    .lista_historico {
+        width: 100%;
+    }
+
+    .lista_historico li {
+        margin: 30px 0px;
+        padding: 15px 20px;
+        background-color: #00000029;
+        border-radius: 15px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .data_e_nome {
+        font-weight: bold;
+    }
+
+    .lista_historico p {
+        text-align: left;
+        color: white;
+        margin: 10px 0px;
+    }
 
 /**/
