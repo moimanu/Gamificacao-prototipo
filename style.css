@@ -311,6 +311,11 @@ button:active, a:active {
             align-items: center;
             position: sticky;
             bottom: 0px;
+            background-color: #131b2b;
+        }
+
+        .nav_i_regras {
+            background-color: #353459;
         }
 
         .bt_nav_inferior {
