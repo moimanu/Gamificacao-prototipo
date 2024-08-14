@@ -309,7 +309,7 @@ button:active, a:active {
             display: flex;
             justify-content: center;
             align-items: center;
-            position: fixed;
+            position: sticky;
             bottom: 0px;
         }
 
