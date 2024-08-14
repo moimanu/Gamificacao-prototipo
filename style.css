@@ -97,6 +97,9 @@ button:active, a:active {
 
     .main_login {
         overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .form_login {
