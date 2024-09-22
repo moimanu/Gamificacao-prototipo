@@ -30,7 +30,6 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     backdrop-filter: blur(6px);
-    overflow: hidden;
 }
 
 .body_tela_login {
@@ -310,25 +309,7 @@ a, button, label {
 
     /*NAV INFERIOR*/
 
-        .gradiente {
-            height: 100px;
-            width: 100%;
-            background: linear-gradient(to top, #131b2b, rgba(254, 180, 123, 0));
-        }
-
         .nav_inferior {
-            height: 200px;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: end;
-            align-items: center;
-            position: sticky;
-            bottom: 0px;
-            background-color: #131b2b;
-        }
-
-        .nav_parteB {
             height: 100px;
             width: 100%;
             display: flex;
@@ -336,11 +317,11 @@ a, button, label {
             align-items: center;
             position: sticky;
             bottom: 0px;
+            background-color: #131b2b;
         }
 
         .nav_i_regras {
             background-color: #353459;
-            height: 100px;
         }
 
         .bt_nav_inferior {
